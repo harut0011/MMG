@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 80vw;
+  }
+}
+.header .head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.header .head #logo {
+  background-image: url("../img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 80px;
+}
+.header .head nav {
+  display: flex;
+  justify-content: space-around;
+}
+.header .head nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .head nav ul li a {
+  text-decoration: none;
+  color: #3c3c3c;
+}
+.header .head nav ul li:not(:first-child) {
+  margin-left: 40px;
+}
+.header .head nav ul .drop-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */
