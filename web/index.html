@@ -1,76 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--   font   -->
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-	<!-- font-family: 'Rubik', sans-serif; -->
-
-
-
-
-
-	<!--  CSS  -->
-	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--   font   -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Rubik', sans-serif; -->
+    <!--  CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+    /*hiding the scroll thing on the right*/
+    </style>
 </head>
-<body>
-	<header class="header">
-		<div class="container">
-			<div class="head">
-				<div id="logo"></div>
-				<nav class="nav">
-					<ul class="main-menu">
-						<li class="main-menu-item"><a href="#">Главная</a></li>
-						<li class="main-menu-item"><a href="#">Новости</a></li>
-						<li class="main-menu-item"><a href="#">Продукты</a>
-							<ul class="drop-menu">
-								<li class="drop-menu-item">Умный дом</li>
-								<li class="drop-menu-item">Умная машина</li>
-								<li class="drop-menu-item">Умный кошелёк</li>
-							</ul>
-						</li>
-						<li><a href="#">Загрузить</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<button class="login-btn">Войти</button>
-				</nav>
-			</div>
-			<div class="content">
-				<div class="main-thesis"></div>
-				<div class="second-thesis">
-					<div class="secon-thesis-child">
-						<div class="icon"></div>
-						<h1>Новое напраление для бизнеса</h1>
-					</div>
-					<div class="secon-thesis-child">
-						<div class="icon"></div>
-						<h1>Создание мира, в котором интернет существует в нашей жизни</h1>
-					</div>
-					<div class="secon-thesis-child">
-						<div class="icon"></div>
-						<h1>Актуализация меняющегося мира</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
 
-	<section class="section1">
-		<div class="container"></div>
-	</section>
-	<section class="section2">
-		<div class="container"></div>
-	</section>
-	<section class="section3">
-		<div class="container"></div>
-	</section>
-	<section class="section4">
-		<div class="container"></div>
-	</section>
-	<section class="section5">
-		<div class="container"></div>	
-	</section>			
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="head">
+                <div id="logo"><img src="img/logo.png" alt=""></div>
+                <div class="container" data-name="menu-icon">
+                    <div class="bar1 bar"></div>
+                    <div class="bar2 bar"></div>
+                    <div class="bar3 bar"></div>
+                </div>
+                <nav class="nav">
+                    <ul class="main-menu">
+                        <li class="main-menu-item"><a href="#">Главная</a></li>
+                        <li class="main-menu-item"><a href="#">Новости</a></li>
+                        <li class="main-menu-item"><a href="#">Продукты</a></li>
+                        <li class="main-menu-item"><a href="#">Загрузить</a></li>
+                        <li class="main-menu-item"><a href="#">Контакты</a></li>
+                    </ul>
+                    <button class="btn">Войти</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="content">
+                <div class="main-icon"></div>
+                <div class="thesis">
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Новое напраление для бизнеса</h1>
+                    </div>
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Создание мира, в котором интернет<br>существует в нашей жизни</h1>
+                    </div>
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Актуализация меняющегося мира</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="slider">
+            <div class="slider-container">
+                <div class="slider-translation">
+                    <div class="slider-item">
+                        <div class="slider-item-img"></div>
+                        <div class="container">
+                            <div class="slider-item-text">
+                                <h1 class="slide-name"><span>Наш первый продукт это</span><br> BOT-Checkin</h1>
+                                <p class="slide-describe">Эффективное устройство для менеджера по персоналу
+                                    Лучшая замена традиционному контролю рабочего времени.
+                                    Есть методы, такие как сканер отпечатков пальцев, машина распознавания лиц ...</p>
+                                <button class="btn">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="container">
+                            <div class="slider-item-text">
+                                <h1 class="slide-name"><span>Our SECOND product of the IoT is<br></span> SMART HOME </h1>
+                                <p class="slide-describe">Вместо дактилоскопической машины и проверки в реальном времени ...</p>
+                                <button class="btn">Узнать больше</button>
+                            </div>
+                        </div>
+                        <div class="slider-item-img"></div>
+                    </div>
+                </div>
+                <div class="slider-buttons">
+                    <button class="slider-prev-button"><</button>
+                    <button class="slider-next-button">></button>
+                </div>
+    </section>
+    <section class="section3" style="height: 1000px; margin-top: 300px;">
+        <div class="container">
+            <div class="content">
+                <div class="thesis">
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Новое напраление для бизнеса</h1>
+                    </div>
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Создание мира, в котором интернет<br>существует в нашей жизни</h1>
+                    </div>
+                    <div class="thesis-child">
+                        <div class="icon"></div>
+                        <h1 class="thesis-text">Актуализация меняющегося мира</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="container"></div>
+    </section>
+    <section class="section5">
+        <div class="container"></div>
+    </section>
+    <script>
+    // The menu opening/closing icon
+    const menuIcon = document.querySelector('div[data-name="menu-icon"]'),
+        mainMenu = document.querySelector('nav'),
+        body = document.querySelector('body')
+    console.log(menuIcon)
+    menuIcon.addEventListener('click', function() {
+        this.classList.toggle('change');
+        mainMenu.classList.toggle('mobile-main-menu-on');
+        body.classList.toggle('disabled-scroll');
+    })
+    </script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
