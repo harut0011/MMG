@@ -33,6 +33,7 @@ body {
   font-size: 23px;
   color: #fff;
   box-shadow: 0 10px 20px #2c67b1;
+  z-index: 9999;
 }
 
 .btn:hover {
@@ -124,23 +125,13 @@ body {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.section1 {
-  color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/section1/section1-bg.jpg");
-  height: 50vw;
-  position: relative;
-}
-
 .content {
   height: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.content .main-icon {
+.content .section-img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -156,6 +147,13 @@ body {
 }
 .content .thesis-child {
   display: flex;
+  padding: 30px;
+  border-radius: 20px;
+}
+.content .thesis-child:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.3);
+  cursor: pointer;
 }
 .content .thesis-child div.icon {
   background-size: cover;
@@ -166,8 +164,34 @@ body {
 }
 .content .thesis-child h1 {
   margin-left: 20px;
-  font-style: italic;
+  font-size: 1.4vw;
+}
+.content .thesis-child h1 span {
   font-size: 1.8vw;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.section1 {
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/section1/section1-bg.jpg");
+  height: 50vw;
+  position: relative;
+}
+.section1 .content .section-img {
+  background-image: url("../img/section1/main-icon.png");
+}
+.section1 .content .thesis .thesis-child:nth-child(1) .icon {
+  background-image: url("../img/section1/icon1.png");
+}
+.section1 .content .thesis .thesis-child:nth-child(2) .icon {
+  background-image: url("../img/section1/icon2.png");
+}
+.section1 .content .thesis .thesis-child:nth-child(3) .icon {
+  background-image: url("../img/section1/icon3.png");
 }
 
 .section2 {
@@ -176,35 +200,82 @@ body {
 }
 
 .section3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../img/section3/section3-img.png");
   height: 50vw;
   position: relative;
 }
+.section3 .content .section-img {
+  background-image: url("../img/section3/section3-img.png");
+  width: 40vw;
+  height: 25vw;
+}
+.section3 .content .thesis .thesis-child:nth-child(1) .icon {
+  background-image: url("../img/section3/clock.png");
+}
+.section3 .content .thesis .thesis-child:nth-child(2) .icon {
+  background-image: url("../img/section3/cost.png");
+}
+.section3 .content .thesis .thesis-child:nth-child(3) .icon {
+  background-image: url("../img/section3/refresh.png");
+}
 
-/*
-    &:nth-child(1) {
-        .icon {
-            background-image: url('../img/section1/icon1.png');
-        }
+.section4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/section4/main-bg.png");
+  text-align: right;
+  height: 600px;
+  color: #fff;
+}
+.section4 .container {
+  height: 100%;
+}
+.section4 .container .download {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.section4 .container .download > * {
+  margin: 25px 0;
+}
+.section4 .container .download h1 {
+  font-size: 1.4vw;
+  margin-bottom: 0;
+}
+.section4 .container .download h1 span {
+  font-size: 1.8vw;
+  font-weight: 600;
+  font-style: italic;
+}
+.section4 .container .download p {
+  margin-top: 10px;
+}
+.section4 .download-btns {
+  display: flex;
+}
+.section4 .download-btns div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 4vw;
+  width: 11vw;
+  margin: 0 20px;
+  border-radius: 10px;
+}
+.section4 .download-btns div:first-child {
+  background-image: url("../img/section4/istore.png");
+}
+.section4 .download-btns div:last-child {
+  background-image: url("../img/section4/gplay.png");
+}
+.section4 .download-btns div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
-    }
-
-    &:nth-child(2) {
-        .icon {
-            background-image: url('../img/section1/icon2.png');
-        }
-
-    }
-
-    &:nth-child(3) {
-        .icon {
-            background-image: url('../img/section1/icon3.png');
-        }
-    }
-*/
 @keyframes dropingMenu {
   0% {
     display: none;
