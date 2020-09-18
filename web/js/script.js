@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.addEventListener('resize', function() {
-        console.log(document.querySelector('.container').offsetWidth)
-        document.querySelector('.slider').style.width = document.querySelector('.container').offsetWidth + 'px';
-    })
     const container = document.querySelector('.slider-container');
     const translation = document.querySelector('.slider-translation');
     const sliderItems = document.querySelectorAll('.slider-item');

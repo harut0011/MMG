@@ -1,6 +1,29 @@
 @media screen and (max-width: 1499px) {
     .container {
-        width: 90vw;
+        max-width: 90vw;
+    }
+
+    .section4 {
+        .container {
+
+
+            .download {
+                h1 {
+                    font-size: 3.5vw;
+
+                    span {
+                        font-size: 4.5vw
+                    }
+                }
+            }
+        }
+
+        .download-btns {
+            div {
+                height: 65px;
+                width: 190px;
+            }
+        }
     }
 
     #logo {
@@ -14,8 +37,54 @@
         font-size: 19px;
         padding: 12px 35px;
     }
+
     .head {
-    	height: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .news {
+        &-child {
+            width: 45%;
+        }
+    }
+
+    .section4 {
+        .download-btns {
+            div {
+                height: 55px;
+                width: 170px;
+            }
+        }
+    }
+
+    .content {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .section-img {
+            @include bgImage(cover, no-repeat, center);
+            width: 20vw;
+            height: 15vw;
+        }
+
+        .thesis {
+            &-child {
+                h1 {
+                    margin-left: 20px;
+                    font-size: 2vw;
+
+                    span {
+                        font-size: 2.2vw;
+                        font-weight: 600;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -24,48 +93,82 @@
         font-size: 14px;
         padding: 10px 30px;
     }
-    .head {
-    	height: 60px;
-    }
-}
 
-@media screen and (max-width: 940px) {
+    .head {
+        height: 60px;
+    }
+
+    .section4 {
+        .download-btns {
+            flex-direction: column;
+
+            div {
+                margin: 10px 0;
+                height: 45px;
+                width: 160px;
+            }
+        }
+    }
+
+    .news {
+        &-child {
+            .news-text {
+                display: none;
+            }
+        }
+    }
+
     div[data-name="menu-icon"].container {
         display: inline-block !important;
     }
 
     .head {
         position: relative;
-        width: 100vw;
+        background-color: #fff;
+        z-index: 3;
 
         nav {
-            position: absolute;
-            top: 0;
-            right: -100%;
+            position: fixed;
+            top: -100vh;
+            left: 0;
             flex-direction: column;
             align-content: stretch;
-            z-index: 100;
-            background-color: #fff;
-            width: 200px;
+            background-color: #5df8d3;
+            width: 100vw;
             height: 100vh;
+            z-index: 1;
+            font-size: 17px;
 
             .main-menu {
                 flex-direction: column;
             }
 
             .btn {
-            	width: 15vw;
-            	height: auto;
-            	position: relative;
-            	bottom: 20px;
+                height: auto;
+                position: relative;
+                bottom: 20px;
+                box-shadow: none;
+            }
+        }
+
+        .mobile-main-menu-on {
+            top: 0vh;
+        }
+    }
+
+    .content {
+        .thesis {
+            &-child {
+                h1 {
+                    font-size: 2.5vw;
+
+                    span {
+                        font-size: 2.9vw;
+                    }
+                }
             }
         }
     }
-}
-
-.mobile-main-menu-on {
-    right: 4.5vw !important;
-    box-shadow: -100px 0 1000px #000;
 }
 
 @media screen and (max-width: 850px) {
@@ -75,4 +178,73 @@
             height: 30px;
         }
     }
+
+    .news {
+        justify-content: center;
+
+        &-child {
+            width: 85%;
+
+            .news-text {
+                display: none;
+            }
+        }
+    }
+
+    .section2 {
+        height: 1100px;
+    }
+
+    .slider-translation {
+        flex-direction: column;
+
+        .container {
+            margin: 30px auto;
+        }
+    }
+
+    .slider-buttons {
+        display: none;
+
+        button {
+            display: none;
+        }
+    }
+
+    .btn {
+        margin: 0 auto;
+        font-size: 22px;
+        padding: 13px 32px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .section1 {
+        height: 50vh;
+    }
+    .content {
+            .section-img {
+                display: none;
+            }
+
+            .thesis {
+                &-child {
+                    div.icon {
+                        width: 8vw;
+                        height: 8vw;
+                    }
+
+                    .thesis-text {
+                        font-size: 17px;
+
+                        span {
+                            font-size: 4.3vw
+                        }
+                    }
+                }
+
+                pointer-events: none;
+            }
+        }
 }
