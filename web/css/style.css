@@ -544,11 +544,15 @@ footer {
     font-weight: 600;
     font-style: italic;
   }
+
+  .section2 {
+    height: 450px;
+  }
 }
 @media screen and (max-width: 940px) {
   .btn {
-    font-size: 14px;
-    padding: 10px 30px;
+    font-size: 15px;
+    padding: 12px 34px;
   }
 
   .head {
@@ -635,6 +639,15 @@ footer {
   .slider-translation .container {
     margin: 30px auto;
   }
+  .slider-translation .container .slider-item-text {
+    position: relative;
+    top: 2vw;
+    height: 50%;
+  }
+  .slider-translation .container .slider-item-text .btn {
+    position: absolute;
+    bottom: -50px;
+  }
 
   .slider-buttons {
     display: none;
@@ -647,6 +660,11 @@ footer {
     margin: 0 auto;
     font-size: 22px;
     padding: 13px 32px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slider-translation .slider-item-img {
+    width: 60%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -669,6 +687,29 @@ footer {
   }
   .content .thesis-child .thesis-text span {
     font-size: 4.3vw;
+  }
+
+  .section2 .slider .slider-translation .slider-item-img {
+    display: none;
+  }
+  .section2 .slider .slider-translation .slider-item-text {
+    text-align: center;
+    align-items: center;
+  }
+  .section2 .slider .slider-translation .slider-item-text h1 {
+    font-size: 11vw;
+  }
+  .section2 .slider .slider-translation .slider-item-text h1 span {
+    font-size: 7vw;
+  }
+  .section2 .slider .slider-translation .slider-item-text p {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section3 {
+    height: 300px;
   }
 }
 .slider {
